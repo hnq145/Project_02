@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Dự án 2 - tự học HTML CSS - Tuhoc.cc</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- logo -->
+          <a href="#!" data-aos="fade-up"
+            ><img src="./assets/img/logo.svg" alt="Besnik." class="logo"
+          /></a>
+
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#!" data-aos="fade-up">Home</a>
+              </li>
+              <li>
+                <a href="#!" data-aos="fade-up">Features</a>
+              </li>
+              <li>
+                <a href="#!" data-aos="fade-up">Pricing</a>
+              </li>
+              <li>
+                <a href="#!" data-aos="fade-up">About</a>
+              </li>
+              <li>
+                <a href="#!" data-aos="fade-up">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- btn action -->
+          <div class="action">
+            <a class="action-link" href="#!" data-aos="fade-up">Sign in</a>
+            <a class="action-btn" href="#!" data-aos="fade-up">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <div class="hero" data-aos="fade-down">
+        <div class="main-content">
+          <div class="body">
+            <!-- hero left -->
+            <div class="content-block">
+              <p class="top-title" data-aos="fade-right">
+                😎 EASY LEARNING PLATFORM
+              </p>
+              <h1 class="title" data-aos="fade-right">
+                Words learner come here.
+              </h1>
+              <p class="desc" data-aos="fade-right">
+                Build skills with courses, certificates, and get online
+                knowledge from our
+                <span class="desc-span">world-class platform</span>.
+              </p>
+              <div class="cta-group">
+                <a href="#!" class="btn" data-aos="fade-right">Get Started</a>
+                <div class="play-video" data-aos="fade-left">
+                  <img src="./assets/icon/play.svg" alt="play video" />
+                </div>
+              </div>
+            </div>
+
+            <!-- hero right -->
+            <div class="media-block">
+              <img
+                src="./assets/img/teacher-2.jpg"
+                alt="Words learner come here."
+                class="media"
+                data-aos="fade-up-right"
+              />
+
+              <!-- course -->
+              <div class="media-course" data-aos="fade-up-right">
+                <img
+                  src="./assets/icon/book.svg"
+                  alt="course icon"
+                  class="course-icon"
+                  data-aos="fade-down-right"
+                />
+                <span class="detail" data-aos="fade-up-right"
+                  >Courses 1000+</span
+                >
+              </div>
+
+              <!-- schedules -->
+              <div class="media-schedules">
+                <span class="detail" data-aos="fade-up-left">Schedules</span>
+                <img
+                  src="./assets/icon/schedules-1.svg"
+                  alt="Schedules icon"
+                  class="schedules-icon icon-1"
+                  data-aos="fade-down-right"
+                />
+                <img
+                  src="./assets/icon/schedules-2.svg"
+                  alt="Schedules icon"
+                  class="schedules-icon icon-2"
+                  data-aos="fade-down-right"
+                />
+                <img
+                  src="./assets/icon/schedules-3.svg"
+                  alt="Schedules icon"
+                  class="schedules-icon icon-3"
+                  data-aos="fade-down-right"
+                />
+                <img
+                  src="./assets/icon/schedules-4.svg"
+                  alt="Schedules icon"
+                  class="schedules-icon icon-4"
+                  data-aos="fade-down-right"
+                />
+              </div>
+
+              <!-- avatar block -->
+              <div class="avatar-block">
+                <span class="detail" data-aos="fade-down-right"
+                  >Our Active Students</span
+                >
+                <div class="ava-list">
+                  <img
+                    src="./assets/img/ava-1.jpg"
+                    alt="avatar 1"
+                    class="ava"
+                    data-aos="fade-down-left"
+                  />
+                  <img
+                    src="./assets/img/ava-2.jpg"
+                    alt="avatar 2"
+                    class="ava"
+                    data-aos="fade-down-left"
+                  />
+                  <img
+                    src="./assets/img/ava-3.jpg"
+                    alt="avatar 3"
+                    class="ava"
+                    data-aos="fade-down-left"
+                  />
+                  <img
+                    src="./assets/img/ava-4.jpg"
+                    alt="avatar 4"
+                    class="ava"
+                    data-aos="fade-down-left"
+                  />
+                  <div class="ava avar-more">
+                    <span data-aos="flip-left">10K+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- feature -->
+      <div class="feature">
+        <div class="main-content">
+          <div class="body-feature">
+            <p class="top-title top-title-lv2" data-aos="flip-right">
+              F E A T U R E S
+            </p>
+            <h2 class="heading-lv2">
+              <a href="#!" data-aos="flip-right"
+                >We are providing suitable features for students.</a
+              >
+            </h2>
+            <p class="desc" data-aos="flip-right">
+              Read our awesome feature that is absolutely suit for you. Explore
+              the feature and know the best.
+            </p>
+            <div class="feature-list">
+              <!-- item 1 -->
+              <div class="item">
+                <a href="#!"
+                  ><img
+                    src="./assets/icon/feature-icon1.svg"
+                    alt="Live Class"
+                    class="icon"
+                    data-aos="flip-up"
+                /></a>
+                <p class="item-title">
+                  <a href="#!" data-aos="flip-up">Live Class</a>
+                </p>
+                <p class="item-desc" data-aos="flip-up">
+                  We are providing live classes with the best teacher for you
+                </p>
+              </div>
+
+              <!-- item 2 -->
+              <div class="item">
+                <a href="#!"
+                  ><img
+                    src="./assets/icon/feature-icon2.svg"
+                    alt="Discuss"
+                    class="icon"
+                    data-aos="flip-down"
+                /></a>
+                <p class="item-title">
+                  <a href="#!" data-aos="flip-down">Discuss</a>
+                </p>
+                <p class="item-desc" data-aos="flip-down">
+                  Conversation with teachers or another students about task or
+                  any other thing
+                </p>
+              </div>
+
+              <!-- item 3 -->
+              <div class="item">
+                <a href="#!"
+                  ><img
+                    src="./assets/icon/feature-icon2.svg"
+                    alt="Discuss"
+                    class="icon"
+                    data-aos="flip-down"
+                /></a>
+                <p class="item-title">
+                  <a href="#!" data-aos="flip-down">Task</a>
+                </p>
+                <p class="item-desc" data-aos="flip-down">
+                  We give every of our students task for gathering knowledge at
+                  home
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- course -->
+      <div class="course">
+        <div class="main-content">
+          <div class="body">
+            <p class="top-title top-title-lv2" data-aos="zoom-in">
+              C O U R S E S
+            </p>
+            <h2 class="heading-lv2" data-aos="zoom-in">Popular Courses</h2>
+            <div class="row-top">
+              <p class="desc" data-aos="zoom-in">
+                Check out our most poular courses that suit for you. Here you
+                can find your favourite one.
+              </p>
+              <a href="#!" class="all-course" data-aos="zoom-in"
+                >View All Courses</a
+              >
+            </div>
+            <div class="course-list">
+              <!-- course-item 1 -->
+              <div class="course-item">
+                <a href="#!"
+                  ><img
+                    src="./assets/img/course-1.png"
+                    alt="Web Design"
+                    class="thumb"
+                    data-aos="zoom-in-up"
+                /></a>
+                <div class="course-detail">
+                  <div class="wrap-item">
+                    <h3 class="heading-lv3">
+                      <a href="#!" data-aos="zoom-in-up">Web Design</a>
+                    </h3>
+                    <p class="cost" data-aos="zoom-in-up">
+                      Fee <span data-aos="zoom-in-up">$200</span>
+                    </p>
+                    <p class="desc" data-aos="zoom-in-up">
+                      Web design basic to higer level
+                    </p>
+                    <div class="static">
+                      <span data-aos="zoom-in-up">40 Classes</span>
+                      <span data-aos="zoom-in-up">3 Months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- course-item 2 -->
+              <div class="course-item">
+                <a href="#!"
+                  ><img
+                    src="./assets/img/course-2.png"
+                    alt="Web Development"
+                    class="thumb"
+                    data-aos="zoom-in-up"
+                /></a>
+                <div class="course-detail">
+                  <div class="wrap-item">
+                    <h3 class="heading-lv3">
+                      <a href="#!" data-aos="zoom-in-up">Web Development</a>
+                    </h3>
+                    <p class="cost" data-aos="zoom-in-up">
+                      Fee <span data-aos="zoom-in-up">$250</span>
+                    </p>
+                    <p class="desc" data-aos="zoom-in-up">
+                      Web development basic to higer level
+                    </p>
+                    <div class="static">
+                      <span data-aos="zoom-in-up">30 Classes</span>
+                      <span data-aos="zoom-in-up">3 Months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- course-item 3 -->
+              <div class="course-item">
+                <a href="#!"
+                  ><img
+                    src="./assets/img/course-3.png"
+                    alt="UI/UX Design"
+                    class="thumb"
+                    data-aos="zoom-in-up"
+                /></a>
+                <div class="course-detail">
+                  <div class="wrap-item">
+                    <h3 class="heading-lv3">
+                      <a href="#!" data-aos="zoom-in-up">UI/UX Design</a>
+                    </h3>
+                    <p class="cost" data-aos="zoom-in-up">
+                      Fee <span data-aos="zoom-in-up">$350</span>
+                    </p>
+                    <p class="desc" data-aos="zoom-in-up">
+                      UI/UX design basic to higer level
+                    </p>
+                    <div class="static">
+                      <span data-aos="zoom-in-up">50 Classes</span>
+                      <span data-aos="zoom-in-up">4 Months</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Countdown  -->
+      <div class="countdown">
+        <div class="main-content">
+          <div class="body">
+            <div class="countdown-list">
+              <!-- item 1 -->
+              <div class="countdown-item">
+                <p class="static">
+                  <strong data-aos="zoom-in-down">100+</strong>
+                </p>
+                <p class="desc" data-aos="zoom-in-down">Popular Courses</p>
+              </div>
+
+              <!-- item 2 -->
+              <div class="countdown-item">
+                <p class="static">
+                  <strong data-aos="zoom-in-down">500+</strong>
+                </p>
+                <p class="desc" data-aos="zoom-in-down">Skilled Trainer</p>
+              </div>
+
+              <!-- item 3 -->
+              <div class="countdown-item">
+                <p class="static">
+                  <strong data-aos="zoom-in-down">1M+</strong>
+                </p>
+                <p class="desc" data-aos="zoom-in-down">Student Learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- feedback -->
+      <div class="feedback">
+        <div class="main-content">
+          <div class="body">
+            <img
+              src="./assets/icon/block-quote.svg"
+              alt="Ben Foakes"
+              class="block-quote"
+            />
+            <blockquote class="comment" data-aos="zoom-in-left">
+              “They are the best people. And this is the suitable platform to
+              learn from distance.”
+            </blockquote>
+            <d class="desc" data-aos="zoom-in-left"
+              ><strong data-aos="zoom-in-left">Ben Foakes,</strong> student.</d
+            >
+            <div class="feedback-cta">
+              <a href="#!" class="cta-btn">
+                <div class="cta-btn-group">
+                  <img
+                    src="./assets/icon/prev.svg"
+                    alt=""
+                    class="icon"
+                    data-aos="zoom-in-left"
+                  />
+                </div>
+              </a>
+              <a href="#!" class="cta-btn">
+                <div class="cta-btn-group">
+                  <img
+                    src="./assets/icon/next.svg"
+                    alt=""
+                    class="icon"
+                    data-aos="zoom-in-left"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <!-- avatar member -->
+            <img
+              src="./assets/img/ava-fb-1.jpg"
+              alt="member 1"
+              class="ava-fb avar-fb-1"
+              data-aos="zoom-out"
+            />
+            <img
+              src="./assets/img/ava-fb-2.jpg"
+              alt="member 2"
+              class="ava-fb avar-fb-2"
+              data-aos="zoom-out"
+            />
+            <img
+              src="./assets/img/ava-fb-3.jpg"
+              alt="member 3"
+              class="ava-fb avar-fb-3"
+              data-aos="zoom-out"
+            />
+            <img
+              src="./assets/img/ava-fb-4.jpg"
+              alt="member 4"
+              class="ava-fb avar-fb-4"
+              data-aos="zoom-out"
+            />
+            <img
+              src="./assets/img/ava-fb-5.jpg"
+              alt="member 5"
+              class="ava-fb avar-fb-5"
+              data-aos="zoom-out"
+            />
+            <img
+              src="./assets/img/ava-fb-6.jpg"
+              alt="member 6"
+              class="ava-fb avar-fb-6"
+              data-aos="zoom-out"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- admit -->
+      <div class="admit">
+        <div class="main-content">
+          <div class="body">
+            <!-- admit left -->
+            <div class="admit-left">
+              <h2 class="heading-lv2" data-aos="zoom-out-up">
+                Ready to Get Admit
+              </h2>
+              <p class="desc" data-aos="zoom-out-up">
+                Create your account and Boost your Career.
+              </p>
+            </div>
+
+            <!-- admit right -->
+            <a href="#!" class="btn" data-aos="zoom-out-down">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="main-content">
+        <div class="body">
+          <div class="row-top">
+            <!-- column 1 -->
+            <div class="column">
+              <a href="#!"
+                ><img
+                  src="./assets/img/logo.svg"
+                  alt="Besnik."
+                  class="logo"
+                  data-aos="zoom-out-right"
+              /></a>
+            </div>
+
+            <!-- column 2 -->
+            <div class="column">
+              <h3 class="title" data-aos="zoom-out-up">Company</h3>
+              <ul class="list" data-aos="zoom-out-up">
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">About</a>
+                </li>
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Careers</a>
+                </li>
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Press</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- column 3 -->
+            <div class="column">
+              <h3 class="title" data-aos="zoom-out-up">Community</h3>
+              <ul class="list">
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Team Plans</a>
+                </li>
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Blog</a>
+                </li>
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Students</a>
+                </li>
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Schoolarships</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- column 4 -->
+            <div class="column">
+              <h3 class="title" data-aos="zoom-out-up">Teaching</h3>
+              <ul class="list">
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Become a teacher</a>
+                </li>
+                <li>
+                  <a href="#!" data-aos="zoom-out-up">Teaching academy</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- column 5 -->
+            <div class="column" data-aos="zoom-out-left">
+              <h3 class="title" data-aos="zoom-out-up">Be social</h3>
+              <ul class="list list-item5">
+                <li>
+                  <a href="#!">
+                    <img
+                      src="./assets/icon/twitter.svg"
+                      alt="Twitter"
+                      class="social-icon"
+                      data-aos="zoom-out-left"
+                    />
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img
+                      src="./assets/icon/fb.svg"
+                      alt="Facebook"
+                      class="social-icon"
+                      data-aos="zoom-out-left"
+                    />
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img
+                      src="./assets/icon/insta.svg"
+                      alt="Instagram"
+                      class="social-icon"
+                      data-aos="zoom-out-left"
+                    />
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img
+                      src="./assets/icon/linkedin.svg"
+                      alt="Linkedin"
+                      class="social-icon"
+                      data-aos="zoom-out-left"
+                    />
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- copyright  -->
+          <div class="cpr-block">
+            <p class="copyright">
+              © Copyright 2020 by Mayad Ahmed. All right reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>
