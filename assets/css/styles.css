@@ -210,6 +210,19 @@ a {
   border-radius: 18px;
   background: #fefefd;
   box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero .media-course::after {
@@ -247,6 +260,7 @@ a {
   border-radius: 24px;
   background: #fff;
   box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+  animation: float 4s ease-in-out infinite 1s;
 }
 
 .hero .media-schedules span {
@@ -292,6 +306,7 @@ a {
   border-radius: 24px;
   background: #fefefd;
   box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+  animation: float 5s ease-in-out infinite 2s;
 }
 
 .hero .ava-list {
@@ -451,6 +466,15 @@ a {
 
 .course .course-list .course-item {
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course .course-list .course-item:hover {
+  transform: translateY(-10px);
+}
+
+.course .course-list .course-item:hover .course-detail {
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.1);
 }
 
 .course .course-item .thumb {
@@ -959,15 +983,18 @@ body.overflow-hidden {
     gap: 40px;
   }
 
+
   /* Feedback */
+  .feedback {
+    margin-top: 50px;
+  }
   .feedback .feedback-cta {
     justify-content: center;
     margin-left: 0;
   }
+  /* Hide absolute avatars on mobile to prevent layout breakage */
   .feedback .ava-fb {
-    opacity: 0.2;
-    width: 60px;
-    height: 60px;
+    display: none;
   }
 
   /* Admit */
