@@ -29,6 +29,16 @@
   </head>
 
   <body>
+    <!-- Promo Bar -->
+    <div class="promo-bar">
+      <p>
+        🔥 Special Offer: Get 50% off all courses!
+        <span id="promo-timer">24:00:00</span>
+      </p>
+      <a href="#pricing" class="promo-link">Claim Now</a>
+      <span class="close-promo">&times;</span>
+    </div>
+
     <!-- header -->
     <header class="header fixed">
       <div class="main-content">
@@ -42,19 +52,19 @@
           <nav class="nav">
             <ul>
               <li>
-                <a href="#!" data-aos="fade-up">Home</a>
+                <a href="#home" data-aos="fade-up">Home</a>
               </li>
               <li>
-                <a href="#!" data-aos="fade-up">Features</a>
+                <a href="#features" data-aos="fade-up">Features</a>
               </li>
               <li>
-                <a href="#!" data-aos="fade-up">Pricing</a>
+                <a href="#pricing" data-aos="fade-up">Pricing</a>
               </li>
               <li>
-                <a href="#!" data-aos="fade-up">About</a>
+                <a href="#about" data-aos="fade-up">About</a>
               </li>
               <li>
-                <a href="#!" data-aos="fade-up">Contact</a>
+                <a href="#contact" data-aos="fade-up">Contact</a>
               </li>
             </ul>
           </nav>
@@ -63,6 +73,14 @@
           <div class="action">
             <a class="action-link" href="#!" data-aos="fade-up">Sign in</a>
             <a class="action-btn" href="#!" data-aos="fade-up">Sign up</a>
+            <!-- Dark Mode Toggle -->
+            <button
+              id="dark-mode-toggle"
+              class="dark-mode-btn"
+              aria-label="Toggle Dark Mode"
+            >
+              🌙
+            </button>
           </div>
 
           <!-- mobile menu btn -->
@@ -77,7 +95,7 @@
 
     <main>
       <!-- hero -->
-      <div class="hero" data-aos="fade-down">
+      <div class="hero" id="home" data-aos="fade-down">
         <div class="main-content">
           <div class="body">
             <!-- hero left -->
@@ -192,8 +210,47 @@
         </div>
       </div>
 
+      <!-- Partners Section -->
+      <div class="partners">
+        <div class="main-content">
+          <p class="partners-title">Trusted by 4,000+ Companies Worldwide</p>
+          <div class="partners-grid">
+            <img
+              src="https://placehold.co/150x50?text=Google"
+              alt="Partner 1"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
+            <img
+              src="https://placehold.co/150x50?text=Netflix"
+              alt="Partner 2"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            />
+            <img
+              src="https://placehold.co/150x50?text=Airbnb"
+              alt="Partner 3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            />
+            <img
+              src="https://placehold.co/150x50?text=Amazon"
+              alt="Partner 4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            />
+            <img
+              src="https://placehold.co/150x50?text=Facebook"
+              alt="Partner 5"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
+          </div>
+        </div>
+      </div>
+
       <!-- feature -->
-      <div class="feature">
+      <div class="feature" id="features">
         <div class="main-content">
           <div class="body-feature">
             <p class="top-title top-title-lv2" data-aos="flip-right">
@@ -372,6 +429,120 @@
         </div>
       </div>
 
+      <!-- Instructors Section -->
+      <div class="instructors section-padding" id="about">
+        <div class="main-content">
+          <div class="section-header text-center">
+            <p class="top-title top-title-lv2" data-aos="fade-up">T E A M</p>
+            <h2 class="heading-lv2" data-aos="fade-up">Meet Our Instructors</h2>
+            <p class="desc" data-aos="fade-up">
+              Learn from the very best in the industry.
+            </p>
+          </div>
+          <div class="instructor-list">
+            <div class="instructor-item" data-aos="flip-left">
+              <img
+                src="https://placehold.co/300x350?text=Instructor+1"
+                alt="Instructor 1"
+                class="instructor-img"
+              />
+              <h3 class="name">John Doe</h3>
+              <p class="role">Senior Developer</p>
+            </div>
+            <div
+              class="instructor-item"
+              data-aos="flip-left"
+              data-aos-delay="100"
+            >
+              <img
+                src="https://placehold.co/300x350?text=Instructor+2"
+                alt="Instructor 2"
+                class="instructor-img"
+              />
+              <h3 class="name">Jane Smith</h3>
+              <p class="role">UX Designer</p>
+            </div>
+            <div
+              class="instructor-item"
+              data-aos="flip-left"
+              data-aos-delay="200"
+            >
+              <img
+                src="https://placehold.co/300x350?text=Instructor+3"
+                alt="Instructor 3"
+                class="instructor-img"
+              />
+              <h3 class="name">Mike Ross</h3>
+              <p class="role">Data Scientist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+      <div id="pricing" class="pricing section-padding">
+        <div class="main-content">
+          <div class="section-header text-center">
+            <p class="top-title top-title-lv2" data-aos="fade-up">
+              P R I C I N G
+            </p>
+            <h2 class="heading-lv2" data-aos="fade-up">Choose Your Plan</h2>
+
+            <div class="pricing-toggle" data-aos="fade-up">
+              <span class="label">Monthly</span>
+              <label class="switch">
+                <input type="checkbox" id="pricing-toggle-checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <span class="label"
+                >Yearly <span class="badge-save">Save 20%</span></span
+              >
+            </div>
+          </div>
+          <div class="pricing-table">
+            <!-- Free -->
+            <div class="pricing-card" data-aos="fade-up">
+              <h3 class="plan-name">Free</h3>
+              <div class="price">$0<span>/mo</span></div>
+              <ul class="features">
+                <li>3 Courses</li>
+                <li>Community Support</li>
+                <li>Basic Materials</li>
+              </ul>
+              <a href="#!" class="btn pricing-btn">Get Started</a>
+            </div>
+            <!-- Pro -->
+            <div
+              class="pricing-card popular"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="badge">Best Value</div>
+              <h3 class="plan-name">Pro</h3>
+              <div class="price">$29<span>/mo</span></div>
+              <ul class="features">
+                <li>Unlimited Courses</li>
+                <li>Priority Support</li>
+                <li>Certificates</li>
+                <li>Offline Access</li>
+              </ul>
+              <a href="#!" class="btn pricing-btn btn-primary">Join Pro</a>
+            </div>
+            <!-- Enterprise -->
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="plan-name">Enterprise</h3>
+              <div class="price">$99<span>/mo</span></div>
+              <ul class="features">
+                <li>Team Access</li>
+                <li>Dedicated Manager</li>
+                <li>API Access</li>
+              </ul>
+              <a href="#!" class="btn pricing-btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Countdown  -->
       <div class="countdown">
         <div class="main-content">
@@ -400,6 +571,57 @@
                 </p>
                 <p class="desc" data-aos="zoom-in-down">Student Learning</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promo/Deal Section -->
+      <div class="promo-section" data-aos="fade-up">
+        <div class="main-content">
+          <div class="promo-content">
+            <h2>Summer Sale Ending Soon!</h2>
+            <p>Get 50% off all courses. Don't miss out on this opportunity.</p>
+            <div class="promo-timer">
+              <div class="time-box"><span id="days">02</span> Days</div>
+              <div class="time-box"><span id="hours">12</span> Hours</div>
+              <div class="time-box"><span id="minutes">45</span> Mins</div>
+              <div class="time-box"><span id="seconds">30</span> Secs</div>
+            </div>
+            <a href="#!" class="btn promo-btn">Grab Deal</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate Showcase -->
+      <div class="certificates section-padding">
+        <div class="main-content">
+          <div class="section-header text-center">
+            <h2 class="heading-lv2" data-aos="fade-up">
+              Earn Recognized Certificates
+            </h2>
+            <p class="desc" data-aos="fade-up">
+              Add value to your CV with our accredited certificates.
+            </p>
+          </div>
+          <div class="cert-display" data-aos="zoom-in">
+            <img
+              src="https://placehold.co/800x600?text=Certificate+Sample"
+              alt="Certificate"
+              class="cert-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Money Back Guarantee -->
+      <div class="money-back">
+        <div class="main-content">
+          <div class="guarantee-box" data-aos="flip-up">
+            <img src="https://placehold.co/80x80?text=$$" alt="Guarantee" />
+            <div class="guarantee-text">
+              <h3>30-Day Money-Back Guarantee</h3>
+              <p>Not satisfied? Get a full refund, no questions asked.</p>
             </div>
           </div>
         </div>
@@ -492,6 +714,86 @@
         </div>
       </div>
 
+      <!-- FAQ Section -->
+      <div class="faq section-padding">
+        <div class="main-content">
+          <h2 class="heading-lv2 text-center" data-aos="fade-up">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list">
+            <div class="faq-item" data-aos="fade-up">
+              <div class="faq-question">
+                How do I start a course? <span class="toggle-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Simply sign up, choose your course, and click 'Get Started'.
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+              <div class="faq-question">
+                Can I get a refund? <span class="toggle-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, we offer a 30-day money-back guarantee.
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+              <div class="faq-question">
+                Is the certificate valid globally?
+                <span class="toggle-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, our certificates are recognized by top companies worldwide.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Section -->
+      <div class="blog section-padding">
+        <div class="main-content">
+          <h2 class="heading-lv2 text-center" data-aos="fade-up">
+            Latest From Our Blog
+          </h2>
+          <div class="blog-grid">
+            <article class="blog-card" data-aos="fade-up">
+              <img
+                src="https://placehold.co/400x250?text=Blog+1"
+                alt="Blog 1"
+              />
+              <div class="blog-content">
+                <h3>Top 10 Coding Tips</h3>
+                <p>Improve your coding skills with these essential tips...</p>
+                <a href="#!" class="read-more">Read More -></a>
+              </div>
+            </article>
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="https://placehold.co/400x250?text=Blog+2"
+                alt="Blog 2"
+              />
+              <div class="blog-content">
+                <h3>Future of AI</h3>
+                <p>How AI is shaping the future of education and work...</p>
+                <a href="#!" class="read-more">Read More -></a>
+              </div>
+            </article>
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="https://placehold.co/400x250?text=Blog+3"
+                alt="Blog 3"
+              />
+              <div class="blog-content">
+                <h3>Web Design Trends</h3>
+                <p>Explore the latest trends in web design for 2024...</p>
+                <a href="#!" class="read-more">Read More -></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
       <!-- admit -->
       <div class="admit">
         <div class="main-content">
@@ -511,10 +813,23 @@
           </div>
         </div>
       </div>
+      <!-- Newsletter -->
+      <div class="newsletter section-padding">
+        <div class="main-content">
+          <div class="newsletter-box" data-aos="zoom-in">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get the latest updates and offers directly in your inbox.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="main-content">
         <div class="body">
           <div class="row-top">
@@ -638,6 +953,22 @@
         </div>
       </div>
     </footer>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top">
+      ↑
+    </a>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="cookie-banner">
+      <p>
+        We use cookies to improve your experience. <a href="#!">Learn more</a>
+      </p>
+      <button id="accept-cookies" class="btn btn-sm">Accept</button>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-container" class="toast-container"></div>
 
     <!-- Animation JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
